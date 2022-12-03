@@ -1,0 +1,26 @@
+.modal__button--size {
+    height: 18px;
+    width: 18px;
+}
+
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.modal__button:hover,
+.modal__button:focus {
+    transform: scale(1.15);
+    transition-duration: 250ms;
+    fill: #2196F3;
+}

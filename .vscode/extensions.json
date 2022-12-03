@@ -1,3 +1,6 @@
 {
-  "recommendations": ["ritwickdey.liveserver"]
+  "recommendations": [
+    "ritwickdey.liveserver",
+    "glenn2223.live-sass"
+  ]
 }

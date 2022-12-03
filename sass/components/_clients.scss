@@ -1,0 +1,23 @@
+.clients-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients__link {
+    display: flex;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    transition: var(--transition);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    fill: var(--accent);
+    border: 1px solid var(--accent);
+}
