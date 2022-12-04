@@ -1,13 +1,13 @@
+.activity {
+    padding-bottom: 94px;
+}
+
 .activity__list {
     display: flex;
     gap: 30px;
 }
 
-.activity {
-    padding-bottom: 94px;
-}
-
-.thumb {
+.activity__thumb {
     position: relative;
     background-color: #fff;
 }

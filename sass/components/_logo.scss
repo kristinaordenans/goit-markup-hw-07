@@ -5,8 +5,9 @@
     line-height: 1.19;
     color: #000000;
     margin-right: 93px;
+
+    &-accent {
+            color: var(--accent);
+        }
 }
 
-.logo-accent {
-    color: var(--accent);
-}

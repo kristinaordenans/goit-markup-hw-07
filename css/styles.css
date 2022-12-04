@@ -90,7 +90,7 @@ img {
     border-bottom: 1px solid #F5F5F5;
 }
 
-.main-nav {
+.header-nav--centering {
     display: flex;
     align-items: center;
     justify-content: space-between;

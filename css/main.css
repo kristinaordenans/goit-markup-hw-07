@@ -22,6 +22,11 @@
   margin: -1px;
 }
 
+.portfolio, .clients, .team, .feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 body {
   background-color: var(--background-white);
   font-family: Roboto, sans-serif;
@@ -46,14 +51,6 @@ p {
 
 img {
   display: block;
-}
-
-.section-portfolio,
-.team,
-.feature,
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section-title {
@@ -98,9 +95,7 @@ img {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: rgb(24, 140, 232);
 }
 
@@ -112,7 +107,6 @@ img {
   color: #000000;
   margin-right: 93px;
 }
-
 .logo-accent {
   color: var(--accent);
 }
@@ -121,7 +115,24 @@ img {
   border-bottom: 1px solid #F5F5F5;
 }
 
-.main-nav {
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-nav--centering {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,21 +143,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.header-nav,
-.header-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-nav__link {
   display: block;
   position: relative;
@@ -161,7 +157,12 @@ img {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-
+.header-nav__link:hover, .header-nav__link:focus {
+  color: var(--accent);
+}
+.header-nav__link--current {
+  color: var(--accent);
+}
 .header-nav__link--current::after {
   display: inline-block;
   position: absolute;
@@ -173,20 +174,16 @@ img {
   background-color: var(--accent);
   border-radius: 2px;
 }
-
-.header-nav__link:hover,
-.header-nav__link:focus {
-  color: var(--accent);
+.header-nav .header-nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.header-nav__link--current {
-  color: var(--accent);
-}
-
-.header-contact__link {
+.header-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.header-contact .link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -204,21 +201,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.header-contact .link:hover, .header-contact .link:focus {
+  color: var(--accent);
+  fill: var(--accent);
+}
 
 .header-contact__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.header-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-contact__link:hover,
-.header-contact__link:focus {
-  color: var(--accent);
-  fill: var(--accent);
 }
 
 .hero {
@@ -253,7 +242,14 @@ img {
   min-height: 50px;
 }
 
-.feature__title {
+.feature-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.feature-benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -262,19 +258,12 @@ img {
   text-transform: uppercase;
 }
 
-.feature__text {
+.feature-benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text);
   width: 270px;
-}
-
-.feature-benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
 }
 
 .feature-benefits__item {
@@ -294,6 +283,10 @@ img {
   margin-bottom: 30px;
 }
 
+.activity {
+  padding-bottom: 94px;
+}
+
 .activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,11 +294,7 @@ img {
   gap: 30px;
 }
 
-.activity {
-  padding-bottom: 94px;
-}
-
-.thumb {
+.activity__thumb {
   position: relative;
   background-color: #fff;
 }
@@ -329,14 +318,12 @@ img {
 .team--background {
   background-color: var(--background-gray);
 }
-
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-
 .team-list__items {
   text-align: center;
   background-color: #ffffff;
@@ -344,7 +331,6 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team-list__name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -352,7 +338,6 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
 .team-list__title {
   font-size: 16px;
   line-height: 1.18;
@@ -360,12 +345,10 @@ img {
   color: var(--main-text);
   margin-bottom: 16px;
 }
-
 .team-list__card {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .team-list__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,12 +356,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .social-link {
@@ -399,9 +382,7 @@ img {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   fill: #ffffff;
   background-color: var(--accent);
 }
@@ -569,14 +550,14 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .logo {
+.footer__logo--color {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .logo-link {
   text-decoration: none;
   display: block;
-  margin-bottom: 20px;
 }
 
 .address {
@@ -693,7 +674,7 @@ img {
 }
 
 .footer-form__field {
-  width: 295px;
+  width: 358px;
   height: 50px;
   outline: 1px solid transparent;
   border-radius: 4px;
@@ -788,6 +769,11 @@ img {
   display: block;
   text-align: center;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .modal-form-group__lable {

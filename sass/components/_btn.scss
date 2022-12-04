@@ -13,9 +13,10 @@
     border-radius: 4px;
     cursor: pointer;
     transition: var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: rgba(24, 140, 232, 1);
+    }
 }
 
-.button:hover,
-.button:focus {
-    background-color: rgba(24, 140, 232, 1);
-}

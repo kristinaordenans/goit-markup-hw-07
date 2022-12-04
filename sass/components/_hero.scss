@@ -15,20 +15,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &-title {
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    
+    &__button {
+            padding: 9px 31px;
+            min-width: 216px;
+            min-height: 50px;
+        }
 }
 
-.hero-title {
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.hero__button {
-    padding: 9px 31px;
-    min-width: 216px;
-    min-height: 50px;
-}
