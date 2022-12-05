@@ -749,7 +749,7 @@ img {
 
 /* MODAL STYLES */
 
-.modal__title {
+/* .modal__title {
     display: block;
     text-align: center;
     margin-bottom: 12px;
@@ -819,11 +819,11 @@ img {
 
 .modal-form-group {
     margin-bottom: 20px;
-}
+} */
 
 /* AGREEMENT */
 
-.modal-form-agreement {
+/* .modal-form-agreement {
     display: flex;
     align-items: center;
     justify-content: center;
