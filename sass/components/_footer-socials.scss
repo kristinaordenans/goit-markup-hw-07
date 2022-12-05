@@ -27,9 +27,9 @@
     border-radius: 50%;
     fill: #ffffff;
     transition: var(--transition);
-}
 
-.footer-socials__link:hover,
-.footer-socials__link:focus {
-    background-color: var(--accent);
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+    }
 }
