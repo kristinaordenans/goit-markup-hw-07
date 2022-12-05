@@ -62,17 +62,16 @@
             position: relative;
             margin-bottom: 10px;
         }
-    
-        &__icon {
-            position: absolute;
-            top: 50%;
-            left: 12px;
-            width: 18px;
-            transform: translateY(-50%);
-            transition: fill var(--accent);
-        }
 }
 
+  .modal-form-agreement__icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      width: 18px;
+      transform: translateY(-50%);
+      transition: fill var(--accent);
+  }
 
 
 
