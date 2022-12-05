@@ -61,10 +61,6 @@
     transform: translatey(100%);
     transition: transform 250ms ease;
 
-    &:hover {
-        transform: translateY(0);
-    }
-
     &__text {
         font-size: 18px;
         color: #FFFFFF;
@@ -73,3 +69,8 @@
         line-height: 28px;
     }
 }
+
+.galery-item:hover .galery-overlay {
+    transform: translateY(0);
+}
+
