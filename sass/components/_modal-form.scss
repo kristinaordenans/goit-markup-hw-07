@@ -116,7 +116,7 @@
         }
     
     
-        &__checkbox:checked+&-icon &--check {
+        &__checkbox:checked+&__icon &--check {
             opacity: 1;
         }
 }
