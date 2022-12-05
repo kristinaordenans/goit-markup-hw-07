@@ -85,7 +85,6 @@
     position: absolute;
     top: 50%;
     left: 12px;
-    ;
     width: 18px;
     transform: translateY(-50%);
     transition: fill var(--accent);
@@ -134,7 +133,7 @@
 }
 
 
-.modal-form-agreement__checkbox:checked+.modal-form-agreement-icon .modal-form-agreement--check {
+.modal-form-agreement__checkbox:checked+.modal-form-agreement__icon .modal-form-agreement--check {
     opacity: 1;
 }
 
